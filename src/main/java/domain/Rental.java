@@ -1,5 +1,7 @@
 package main.java.domain;
 
+import main.java.exeption.DublicateRental;
+
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -11,6 +13,7 @@ public class Rental {
     public Rental(LocalDate date, RatePlan price, String id) {
         this.date = LocalDate.now();
         this.ratePlan = price;
+        Throw new DublicateRental("Dublicate rent", );
         this.id = id;
     }
 
